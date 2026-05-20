@@ -33,6 +33,9 @@ class Orc extends Character {
         super('Орк', name, language);
         this.weapon = weapon;
     }
+    speak() {
+        console.log(`[Боевой клич] ${this.name} яростно рычит на языке ${this.language}: "За Орду!"`);
+    }
     strike(){
         console.log(`${this.name} наносит удар своим ${this.weapon}.`);
     }
@@ -42,6 +45,9 @@ class Orc extends Character {
     constructor(name, language, spellType) {
         super('Эльф', name, language);
         this.spellType = spellType;
+    }
+    speak() {
+        console.log(`[Мелодичное приветствие] ${this.name} плавно произносит на языке ${this.language}: "Приветствую тебя, путник".`);
     }
     castSpell() {
         console.log(`${this.name} создает заклинание типа: ${this.spellType}.`);
