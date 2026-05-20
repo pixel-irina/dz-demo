@@ -43,16 +43,12 @@ class Orc extends Character {
         super('Эльф', name, language);
         this.spellType = spellType;
     }
-    spellType(){
+    castSpell() {
         console.log(`${this.name} создает заклинание типа: ${this.spellType}.`);
     }
 }
 
-Elf.prototype = Object.create(Character.prototype);
-Elf.prototype.constructor = Elf;
-Elf.prototype.castSpell = function(){
-    console.log(`${this.name} создает заклинание типа: ${this.spellType}.`);
-}
+
 
 const thrall = new Orc('Тралл', 'Оркский', 'Молот Рока');
 const legolas = new Elf('Леголас', 'Эльфийский', 'Магия природы');   
