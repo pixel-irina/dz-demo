@@ -48,3 +48,5 @@ function getDittoAbilityDescriptionPromiseChain() {
             console.error('Произошла ошибка во время выполнения запросов:', error.message);
         });
 }
+
+getDittoAbilityDescriptionPromiseChain();
